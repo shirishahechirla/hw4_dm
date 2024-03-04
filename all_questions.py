@@ -117,40 +117,41 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 4  # All 4 points from Cluster 1 are within Circle (a).
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 3  # 3 points from Cluster 1 are within Circle (b).
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 2  # 2 points from Cluster 1 are within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Count of Cluster 1 points within each circle."
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 2  # 2 points from Cluster 2 are within Circle (a).
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 2  # 2 points from Cluster 2 are within Circle (b).
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1  # 1 point from Cluster 2 is within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Count of Cluster 2 points within each circle."
 
     # type: int
-    answers["(c) Circle (a)"] = 0
+    answers["(c) Circle (a)"] = 0  # No points from Cluster 3 are within Circle (a).
 
     # type: int
-    answers["(c) Circle (b)"] = 0
+    answers["(c) Circle (b)"] = 0  # No points from Cluster 3 are within Circle (b).
+
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 0  # No points from Cluster 3 are within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "Count of Cluster 3 points within each circle."
 
     return answers
 
