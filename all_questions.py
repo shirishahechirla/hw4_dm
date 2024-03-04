@@ -235,16 +235,16 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Cluster 4 has the most even distribution across different land cover types (Forest, Farm, Shrubland, Urban, Water), with significant numbers in each category. This distribution suggests that Cluster 4 has the highest entropy because there is no single dominant land cover type and the categories are more mixed"
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Cluster 1 has 30,000 Water and very few of the other types, making it highly dominated by the Water category. This indicates that Cluster 1 has the lowest entropy because it has the least disorder or randomness, with a clear dominance of one category over the others."
 
     return answers
 
