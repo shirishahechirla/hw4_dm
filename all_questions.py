@@ -72,22 +72,22 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Each shaded circle represents a distinct cluster with uniform density, so the final centroid will be at the center of each circle."
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The final clusters may not be limited to points from only one shaded region due to the influence of initial centroid positions"
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "K-means aims to assign each point to a cluster, so an empty cluster is unlikely unless there are more centroids than distinct data points."
 
     return answers
 
@@ -99,13 +99,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 7.5
+    answers["(a) SSE"] = "2.0"  # SSE = (1^2 + 1^2) for the two points in the cluster.
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = 7.5
+    answers["(b) SSE"] = "2.0"  # SSE = (1^2 + 1^2) for the two points in the cluster.
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 7.5
+    answers["(c) SSE"] = "8.0"  # SSE = (2^2 + 2^2) for the two points in the cluster.
 
     return answers
 
@@ -162,16 +162,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = set('Group A', 'Group C')
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Group A and Group C should be merged using the single link method because they have the closest neighboring points."
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = set('Group A', 'Group B')
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "roup A and Group B should be merged using the complete link method because the greatest distance between points within these groups is less than that involving Group C"
 
     return answers
 
