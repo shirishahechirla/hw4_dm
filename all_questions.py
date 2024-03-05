@@ -99,13 +99,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = "2.0"  # SSE = (1^2 + 1^2) for the two points in the cluster.
+    answers["(a) SSE"] = "(R^2)*4"  # SSE = (1^2 + 1^2) for the two points in the cluster.
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "2.0"  # SSE = (1^2 + 1^2) for the two points in the cluster.
+    answers["(b) SSE"] = "4*((a*a) + (b*b) + (c*c))"  # SSE = (1^2 + 1^2) for the two points in the cluster.
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "8.0"  # SSE = (2^2 + 2^2) for the two points in the cluster.
+    answers["(c) SSE"] = "4*((R^2) + ((R/2)^2))"  # SSE = (2^2 + 2^2) for the two points in the cluster.
 
     return answers
 
