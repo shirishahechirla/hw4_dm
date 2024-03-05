@@ -14,11 +14,10 @@ def question1():
     answers["(a) explain"] = "Hierarchical clustering is more flexible in handling outliers compared to k-means."
 
     # type: bool (True/False)
-    answers["(b)"] = False
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Hierarchical clustering can produce different clusterings based on linkage criteria, and k-means can produce different clusterings due to random initialization."
-"
+    answers["(b) explain"] = "K-means is random in initial centroids, yielding varied results. In contrast, Agglomerative hierarchical clustering is deterministic, ensuring consistent outcomes."
 
     # type: bool (True/False)
     answers["(c)"] = False
@@ -27,10 +26,10 @@ def question1():
     answers["(c) explain"] = "While k-means is more efficient than hierarchical clustering, it is not the most efficient clustering algorithm possible."
 
     # type: bool (True/False)
-    answers["(d)"] = True
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = "Splitting a cluster and reassigning points generally leads to a decrease in SSE."
+    answers["(d) explain"] = "Splitting reduces the sum of squared errors by introducing two centroids for the same set, resulting in a decrease in the distance to the nearest centroids."
 
     # type: bool (True/False)
     answers["(e)"] = True
@@ -45,22 +44,23 @@ def question1():
     answers["(f) explain"] = "An increase in SSB indicates that separation between clusters is increasing."
 
     # type: bool (True/False)
-    answers["(g)"] = True
+    answers["(g)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = "Cohesion and separation can be independent measures in k-means clustering."
+    answers["(g) explain"] = "In k-means, cohesion and separation are independent; enhancing cohesion doesn't necessarily enhance separation."
 
     # type: bool (True/False)
-    answers["(h)"] = False
+    answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "SSE + BSS is not constant; as SSE decreases, BSS increases"
+    answers["(h) explain"] = "The sum of squared distances (TSS) in k-means is the sum of SSE (within-cluster sum of squares) and SSB (between-cluster sum of squares). Additionally, TSS remains constant throughout the k-means clustering process."
 
     # type: bool (True/False)
-    answers["(i)"] = False
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "An increase in cohesion does not necessarily lead to an increase in separation."
+    answers["(i) explain"] = "SSB measures cluster separation, while SSE is an inverse measure of cluster cohesion. Therefore, as cohesion increases, SSE decreases, and separation (SSB) increases."
+
 
     return answers
 
@@ -84,10 +84,10 @@ def question2():
     answers["(b) explain"] = "The final clusters may not be limited to points from only one shaded region due to the influence of initial centroid positions"
 
     # type: bool (True/False)
-    answers["(c)"] = False
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "K-means aims to assign each point to a cluster, so an empty cluster is unlikely unless there are more centroids than distinct data points."
+    answers["(c) explain"] = "The centroid at 12.5 is distant from all points, leading to the emptiness of all other clusters."
 
     return answers
 
@@ -99,13 +99,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = "(R^2)*4"  # SSE = (1^2 + 1^2) for the two points in the cluster.
+    answers["(a) SSE"] = "(R^2)*4"  
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "4*((a*a) + (b*b) + (c*c))"  # SSE = (1^2 + 1^2) for the two points in the cluster.
+    answers["(b) SSE"] = "4*((a*a) + (b*b) + (R*R))"  
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "4*((R^2) + ((R/2)^2))"  # SSE = (2^2 + 2^2) for the two points in the cluster.
+    answers["(c) SSE"] = "10*(R*R)"
 
     return answers
 
@@ -163,16 +163,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set('Group A', 'Group C')
+    answers["(a)"] = set('Group A', 'Group B')
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Group A and Group C should be merged using the single link method because they have the closest neighboring points."
+    answers["(a) explain"] = "Merging Group A and B is possible due to the minimal single-link distance between the rightmost point of A and the leftmost point of B."
 
     # type: set
-    answers["(b)"] = set('Group A', 'Group B')
+    answers["(b)"] = set('Group A', 'Group C')
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "roup A and Group B should be merged using the complete link method because the greatest distance between points within these groups is less than that involving Group C"
+    answers["(b) explain"] = "Group A and C can be combined as the smallest complete-link distance is between the rightmost point of A and the farthest point of C."
 
     return answers
 
@@ -316,7 +316,7 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ['Hierarchical', 'Partial', 'Overlapping']
+    answers["(a)"] = ['Hierarchical', 'Overlapping', 'Partial']
 
     # type: list
     answers["(b)"] = ['Partitional', 'Exclusive', 'Complete']
