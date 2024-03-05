@@ -81,7 +81,7 @@ def question2():
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The final clusters may not be limited to points from only one shaded region due to the influence of initial centroid positions"
+    answers["(b) explain"] = "The final clusters may not be limited to points from only one shaded region due to the influence of initial centroid positions."
 
     # type: bool (True/False)
     answers["(c)"] = True
@@ -238,7 +238,7 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Cluster 4 has the most even distribution across different land cover types (Forest, Farm, Shrubland, Urban, Water), with significant numbers in each category. This distribution suggests that Cluster 4 has the highest entropy because there is no single dominant land cover type and the categories are more mixed"
+    answers["(a) explain"] = "Cluster 4 has the most even distribution across different land cover types (Forest, Farm, Shrubland, Urban, Water), with significant numbers in each category. This distribution suggests that Cluster 4 has the highest entropy because there is no single dominant land cover type and the categories are more mixed."
 
     # type: string
     answers["(b)"] = "Cluster 1"
@@ -277,7 +277,7 @@ def question8():
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = "In two diagonal entries, a pronounced and intense blue color indicates strong cohesion within clusters B and C. This uniformity suggests robust intra-cluster relationships within these specific clusters"
+    answers["(a) explain diag entries, Matrix 3"] = "In two diagonal entries, a pronounced and intense blue color indicates strong cohesion within clusters B and C. This uniformity suggests robust intra-cluster relationships within these specific clusters."
 
     # type: explanatory string (at least four words)
     answers["(a) explain non-diag entries, Matrix 3"] = "In every row, two off-diagonal entries share identical colors, while one entry has a different color. This suggests that each cluster is closer to two other clusters than to the third one."
