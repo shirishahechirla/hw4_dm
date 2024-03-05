@@ -105,7 +105,7 @@ def question3():
     answers["(b) SSE"] = "4*((a*a) + (b*b) + (R*R))"  
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "10*(R*R)"
+    answers["(c) SSE"] = "10*(R^2)"
 
     return answers
 
@@ -163,13 +163,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set('Group A', 'Group B')
+    answers["(a)"] = {'Group A', 'Group B'}
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "Merging Group A and B is possible due to the minimal single-link distance between the rightmost point of A and the leftmost point of B."
 
     # type: set
-    answers["(b)"] = set('Group A', 'Group C')
+    answers["(b)"] = {'Group A', 'Group C'}
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "Group A and C can be combined as the smallest complete-link distance is between the rightmost point of A and the farthest point of C."
