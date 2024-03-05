@@ -214,7 +214,7 @@ def question6():
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = {'G', 'I', 'H', 'J', 'E', 'M', 'B', 'D', 'F', 'L', 'C'}
+    answers["(c)-b cluster 1"] = {'G', 'I', 'H', 'J', 'E', 'M', 'B', 'D', 'F', 'L', 'C', 'A'}
 
     # type: set
     answers["(c)-b cluster 2"] = {'A'}
@@ -256,55 +256,55 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "(a) Matrix 1 Diagonal Explanation: Each diagonal entry, depicted by a prominent and unique blue shade, indicates robust cohesion within clusters. This implies closely grouped points, ensuring stability and coherence within each cluster."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "Clusters A and C are associated with Rows 1 and 3, showing noticeable color differences in the off-diagonal elements. Similarly, Rows 2 and 4 are matched with clusters B and D, reflecting similar patterns."
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "The diagonal entries exhibit clear and mostly blue characteristics, distinguishing them from others. This indicates a heightened cohesion level within clusters B and C."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "Rows 1 and 4 show less distinct diagonal entries, featuring a range of colors indicating diverse distances from other clusters. Rows 2 and 3 exhibit two identical colors, suggesting equidistant relationships with two clusters and a greater separation from a specific cluster."
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "In two diagonal entries, a pronounced and intense blue color indicates strong cohesion within clusters B and C. This uniformity suggests robust intra-cluster relationships within these specific clusters"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain non-diag entries, Matrix 3"] = "In every row, two off-diagonal entries share identical colors, while one entry has a different color. This suggests that each cluster is closer to two other clusters than to the third one."
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster A"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster B"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster C"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = ""
+    answers["(b) Row 1 explain"] = "All non-diagonal entries show varied colors, indicating varying distances from other clusters. Cluster A demonstrates diverse distances from other clusters, and the less defined diagonal entry suggests weaker cohesion within this cluster."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = ""
+    answers["(b) Row 2 explain"] = "The distinct diagonal entry implies robust cohesion within Cluster B. Among the off-diagonal entries, two out of three have matching colors, suggesting equidistant relationships, particularly with A and C. Notably, Cluster B is farther from D."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = ""
+    answers["(b) Row 3 explain"] = "A distinct diagonal entry indicates strong cohesion within Cluster C. Among the off-diagonal entries, two out of three share matching colors, suggesting equidistant relationships, particularly with B and D. Notably, Cluster C is farther from A."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = ""
+    answers["(b) Row 4 explain"] = "Each off-diagonal entry displays unique colors, suggesting different distances from other clusters. Cluster D shows diverse distances from other clusters, being closest to C, then B, and farthest from A. The less defined diagonal entry implies weaker cohesion within Cluster D."
 
     return answers
 
@@ -328,7 +328,7 @@ def question9():
     answers["(d)"] = ['Hierarchical', 'overlapping', 'partial']
 
     # type: list
-    answers["(e)"] = ['Partitional', 'Exclusive', 'Complete']
+    answers["(e)"] = ['Partitional','Exclusive','complete']
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = "Grades are exclusive categories, no overlap. Each student gets one grade per class, ensuring completeness for all students."
@@ -343,25 +343,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "no"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Figure (b) has a higher density of points in the nose, eyes, and mouth compared to Figure (a)."
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "no"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "K-means would identify the nose, eyes, and mouth, but it would also incorporate the lower-density points."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "Calculate the reciprocal of the density to obtain the new density and then apply DBSCAN."
 
     return answers
 
