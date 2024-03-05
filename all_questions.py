@@ -117,28 +117,28 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 4  # All 4 points from Cluster 1 are within Circle (a).
+    answers["(a) Circle (a)"] = 1  # All 4 points from Cluster 1 are within Circle (a).
 
     # type: int
-    answers["(a) Circle (b)"] = 3  # 3 points from Cluster 1 are within Circle (b).
+    answers["(a) Circle (b)"] = 1  # 3 points from Cluster 1 are within Circle (b).
 
     # type: int
-    answers["(a) Circle (c)"] = 2  # 2 points from Cluster 1 are within Circle (c).
+    answers["(a) Circle (c)"] = 1  # 2 points from Cluster 1 are within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Count of Cluster 1 points within each circle."
+    answers["(a) explain"] = "A and B, each with 100 points, have equal influence on a centroid, with one favoring A. However, Circle C, with 100,000 points, ensures a centroid is held due to its stronger attraction, despite initially lacking one. Equal point distribution in A and B ensures each attracts a centroid."
 
     # type: int
-    answers["(b) Circle (a)"] = 2  # 2 points from Cluster 2 are within Circle (a).
+    answers["(b) Circle (a)"] = 1  # 2 points from Cluster 2 are within Circle (a).
 
     # type: int
-    answers["(b) Circle (b)"] = 2  # 2 points from Cluster 2 are within Circle (b).
+    answers["(b) Circle (b)"] = 1 # 2 points from Cluster 2 are within Circle (b).
 
     # type: int
     answers["(b) Circle (c)"] = 1  # 1 point from Cluster 2 is within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Count of Cluster 2 points within each circle."
+    answers["(b) explain"] = "The centroid remains at A, lacking a stronger pull. C's stronger attraction draws one centroid from B, resulting in one centroid for each of the three circles."
 
     # type: int
     answers["(c) Circle (a)"] = 0  # No points from Cluster 3 are within Circle (a).
@@ -148,10 +148,10 @@ def question4():
 
 
     # type: int
-    answers["(c) Circle (c)"] = 0  # No points from Cluster 3 are within Circle (c).
+    answers["(c) Circle (c)"] = 2 # No points from Cluster 3 are within Circle (c).
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Count of Cluster 3 points within each circle."
+    answers["(c) explain"] = "Close A and B share points, assigned to A's centroid. C's points split between two centroids, each with 50,000 points. A and B, with equal points, share a moving centroid. C's centroids slightly separate but stay within C with half the points each."
 
     return answers
 
